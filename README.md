@@ -56,8 +56,6 @@ Portfolio Risk Analysis
 ```
 
 ## Methodology
-
-## Methodology
 1. Probability of Default (PD)
 
 A logistic regression-based credit-risk model is used to estimate borrower default probability.
