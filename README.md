@@ -179,14 +179,14 @@ Therefore, the results should not be interpreted as production banking or regula
 
 ## Author
 
-V.Sriyasri
+**V. Sriyasri**
 
 B.Com | ACCA Student
 
-Areas of interest:
+**Areas of Interest**
 
-Credit Risk
-Quantitative Finance
-Financial Modelling
-Risk Analytics
-Python for Finance
+- Credit Risk
+- Quantitative Finance
+- Financial Modelling
+- Risk Analytics
+- Python for Finance
