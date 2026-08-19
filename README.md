@@ -150,20 +150,18 @@ Seaborn
 Google Colab
 
 ## Repository Structure
-IFRS9-ECL-Credit-Risk-Engine/
-│
-├── README.md
-│
-├── notebooks/
-│   └── IFRS9_ECL_Credit_Risk_Engine.ipynb
-│
-└── outputs/
-    ├── README.md
-    ├── IFRS9_ECL_Final_Portfolio_Summary.csv
-    ├── credit_stress_test_summary.csv
-    ├── credit_stress_test_by_stage.csv
-    └── credit_stress_test_by_sector.csv
-    
+
+- `README.md`
+- `notebooks/`
+  - `IFRS9_ECL_Credit_Risk_Engine.ipynb`
+- `outputs/`
+  - `README.md`
+  - `IFRS9_ECL_Final_Portfolio_Summary.csv`
+  - `credit_stress_test_summary.csv`
+  - `credit_stress_test_by_stage.csv`
+  - `credit_stress_test_by_sector.csv`
+
+
 ## Model Limitations
 
 This is an educational quantitative credit-risk prototype using synthetic data.
