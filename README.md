@@ -36,33 +36,28 @@ The project is designed as an educational credit-risk modelling prototype using 
 
 ```text
 Synthetic Loan Portfolio
-          │
-          ▼
+          ↓
 Data Preparation
-          │
-          ▼
+          ↓
 Probability of Default (PD)
-          │
-          ▼
+          ↓
 IFRS 9 Stage Classification
-          │
-          ├──────────────┐
-          ▼              ▼
-         LGD             EAD
-          │              │
-          └──────┬───────┘
-                 ▼
-          Expected Credit Loss
-                 │
-        ┌────────┴────────┐
-        ▼                 ▼
-Forward-Looking      Stress Testing
-Scenarios                 │
-        │                 │
-        └────────┬────────┘
-                 ▼
-        Portfolio Risk Analysis
-Methodology
+          ↓
+      ┌───┴───┐
+      ↓       ↓
+     LGD     EAD
+      └───┬───┘
+          ↓
+Expected Credit Loss
+          ↓
+Stress Testing
+          ↓
+Portfolio Risk Analysis
+```
+
+## Methodology
+
+## Methodology
 1. Probability of Default (PD)
 
 A logistic regression-based credit-risk model is used to estimate borrower default probability.
@@ -105,11 +100,12 @@ EAD = Current Exposure + CCF × Undrawn Commitment
 The core calculation is:
 
 ECL = PD × LGD × EAD
-Forward-Looking Scenarios
+
+## Forward-Looking Scenarios
 
 The model incorporates forward-looking scenarios to evaluate how changes in credit-risk assumptions affect expected losses.
 
-Stress Testing
+## Stress Testing
 
 The portfolio is evaluated under:
 
@@ -118,7 +114,8 @@ Base	₹2,293,504	—
 Mild Stress	₹3,053,544	+33.14%
 Severe Stress	₹3,951,579	+72.29%
 Extreme Stress	₹5,964,913	+160.08%
-Final Portfolio Results
+
+## Final Portfolio Results
 Metric	Result
 Portfolio Size	6,000 loans
 Current Exposure	₹231.91M
@@ -126,7 +123,8 @@ Exposure at Default	₹243.51M
 Expected Credit Loss	₹2.29M
 Portfolio ECL Rate	0.94%
 Default Rate	3.88%
-IFRS 9 Stage Analysis
+
+## IFRS 9 Stage Analysis
 
 The model evaluates:
 
@@ -134,7 +132,8 @@ Stage distribution
 ECL by stage
 Stage 3 credit-impaired exposures
 Portfolio risk concentration
-Key Outputs
+
+## Key Outputs
 
 The outputs/ directory contains:
 
@@ -142,7 +141,8 @@ Final portfolio ECL summary
 Stress-test summary
 Stress-test results by IFRS 9 stage
 Stress-test results by sector
-Technologies
+
+## Technologies
 Python
 Pandas
 NumPy
@@ -150,7 +150,8 @@ Scikit-learn
 Matplotlib
 Seaborn
 Google Colab
-Repository Structure
+
+## Repository Structure
 IFRS9-ECL-Credit-Risk-Engine/
 │
 ├── README.md
@@ -164,7 +165,8 @@ IFRS9-ECL-Credit-Risk-Engine/
     ├── credit_stress_test_summary.csv
     ├── credit_stress_test_by_stage.csv
     └── credit_stress_test_by_sector.csv
-Model Limitations
+    
+## Model Limitations
 
 This is an educational quantitative credit-risk prototype using synthetic data.
 
@@ -179,9 +181,9 @@ Scenario-based rather than fully econometric macroeconomic modelling
 
 Therefore, the results should not be interpreted as production banking or regulatory IFRS 9 provisions.
 
-Author
+## Author
 
-Sriyasri
+V.Sriyasri
 
 B.Com | ACCA Student
 
